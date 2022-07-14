@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Form</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="background">
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+    <form action="/api/productos" method="POST">
+      <h3>Post Product</h3>
+
+      <label for="title">Title</label>
+      <input type="text" placeholder="Enter a title" id="title" name="title" />
+
+      <label for="price">Price</label>
+      <input
+        type="number"
+        placeholder="Enter the price"
+        id="price"
+        name="price"
+      />
+
+      <label for="image">Image</label>
+      <input
+        type="text"
+        placeholder="Enter the image url"
+        id="image"
+        name="thumbnail"
+      />
+
+      <button>Post</button>
+    </form>
+  </body>
+</html>
